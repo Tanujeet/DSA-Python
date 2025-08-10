@@ -1,61 +1,80 @@
-#pattern 1
-for i in range(5):
-    for j in range(5):
-        print("*",end=" ")
-    print()
+# #pattern 1
+# n=5
+# for i in range(n):
+#     for j in range(n):
+#         print("*",end="")
+#     print()
+
+# #pattern 2
+# n=5 
+# for i in range(n):
+#     for j in range(1,i+1):
+#         print("*",end="")
+#     print()
 
 
-#pattern 2
-for i in range(6):
-    print("*"*(i))
+# #pattern 3
+# n=5 
+# for i in range(n):
+#     for j in range(1,i+1):
+#         print(j,end="")
+#     print()    
 
 
-#pattern 3
-for i in range(1,5):
-    for j in range(1,i+1):
-        print(j,end=" ")
-    print()
+# #pattern 4
+# n=5
+# for i in range(n):
+#     for j in range(i+1):
+#         print(i+1,end="")
+                   
+#     print()    
 
-
-
-#pattern 4
-for i in range(6):
-    for j in range(1,i+1):
-        print(i ,end=" ")
-    print()
-
-
-
-#pattern 5    
-for i in range(5,0,-1):
-    print("*" *(i))
+#pattern 5
+# n=5
+# for i in range(n):
+#     for j in range(n-i):
+#         print("*",end="")
+#     print()
 
 #pattern 6
-for i in range(5,0,-1):
-    for j in range(1,i+1):
-        print(j,end=" ")
-    print()
+# n=5
+# for i in range(n):
+#     for j in range(1,n-i):
+#         print(j,end="")
+#     print()
 
 
-#patten 7
+#pattern 7
 
-for i in range(5):
-        for j in range(4,i,-1):
-            print(" ",end=" ")
-        for j in range(2*i+1):
-            print("*",end=" ") 
-         
-        print()
-
-#pattern 8
-
-n=5
-for i in range(n):
-     for j in range(i):
-        print(" ",end=" ")
-     for j in range(2*(n-i)-1):
-         print("*",end=" ") 
-
-     print() 
+# def pattern7(n):
+#      n=5
+#      for i in range(n):
+#         for j in range(n-1-i):
+#               print(" ",end="")
+#         for j in range(2*i+1):
+#               print("*",end="")
+  
+#         print()
 
 
+
+# #pattern 8
+# def pattern8(n):
+#      n=5
+#      for i in range(n):
+#         for j in range(i):
+#             print(" ",end="")
+#         for j in range(2*(n-i-1)+1):
+#             print("*",end="")   
+#         print()
+
+
+# #pattern 9
+# def pattern9(n):
+#      pattern7(n)
+#      pattern8(n)
+
+# pattern9(5)
+
+
+#pattern 10
