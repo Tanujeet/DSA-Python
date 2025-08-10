@@ -77,4 +77,19 @@
 # pattern9(5)
 
 
-#pattern 10
+# #pattern 10
+# n=5
+# for i in range(n):
+#     for j in range(i+1):
+#         print("*",end="")
+#     print()
+
+# for i in range(n-1):
+#     for j in range(n-1-i):
+#         print("*",end="")
+#     print()    
+
+
+#pattern 11
+
+
