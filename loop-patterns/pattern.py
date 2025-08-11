@@ -81,3 +81,38 @@
 # pattern9(5)     
 
 
+#pattern 10
+# n=5
+# for i in range(n):
+#     for j in range(i+1):
+#         print("*",end="")
+#     print()
+
+# for i in range(n-1):
+#     for j in range(n-1-i):
+#         print("*",end="")
+#     print()    
+
+#pattern 11
+# n=5 
+# for i in range(n):
+#     start =1 if i%2!=0 else 0
+#     for j in range(i):
+#         print(start,end="")
+#         start = 1-start
+   
+#     print()    
+
+#pattern 12
+# n=5
+# for i in range(n):
+
+#     for j in range(1,i+1):
+#         print(j,end="")  
+
+#     for j in range(2*(n-i-1)):
+#         print(" ",end="")
+
+#     for j in range(i,0,-1):
+#         print(j,end="")       
+#     print()
