@@ -198,3 +198,13 @@
 #    pattern191(n)
 #    print()
 # pattern19(5)   
+
+
+
+#pattern 20
+
+# def pattern19(n):
+#    pattern191(n)
+#    pattern192(n)
+#    print()
+# pattern19(5)   
