@@ -164,3 +164,37 @@
 #     for j in range(n-i-1):
 #         print(" ",end="")
 #     print()
+
+
+# pattern 19.1
+# def pattern191(n):
+#     for i in range(n):
+#         for j in range(i+1):
+#            print("*",end="")
+#         for j in range(2*(n-i)-2):
+#            print(" ",end="")
+#         for j in range(i+1):
+#            print("*",end="")
+#         print()
+
+
+#pattern 19.2
+# def pattern192(n):
+#    for i in range(n,0,-1):
+#       for j in range(i):
+#          print("*",end="")
+#       for j in range(2*(n-i)):
+#          print(" ",end="")
+#       for j in range(i):
+#          print("*",end="")
+#       print()
+  
+
+
+
+#pattern 19
+# def pattern19(n):
+#    pattern192(n)
+#    pattern191(n)
+#    print()
+# pattern19(5)   
