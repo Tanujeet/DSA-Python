@@ -149,3 +149,18 @@
 # for i in range(n):
 #   ch = chr(65+i)
 #   print(ch*(i+1))
+
+
+#pattern  17
+# n=5
+# for i in range(n):
+#     for j in range(n-i-1):
+#         print(" ",end="")
+#     for j in range(65,65+i):
+#         print(chr(j),end="")
+#     for j in range(65 + i - 2, 64, -1):
+#         print(chr(j), end="")
+
+#     for j in range(n-i-1):
+#         print(" ",end="")
+#     print()
