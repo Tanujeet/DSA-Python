@@ -126,3 +126,11 @@
 #         print(num, end=" ")
 #         num += 1
 #     print()
+
+
+#pattern 14
+# n=5
+# for i in range(n):
+#     for j in range(65,65+i):
+#         print(chr(j),end="")
+#     print()
