@@ -98,8 +98,17 @@
 
 
 
+#pattern 10
+# def pattern10(n):
+#      for i in range(n):
+#           for j in range(i+1):
+#                print("*",end="")
+#           print()
 
-
+#      for i in range(n):
+#           for j in range(n-i-1):
+#                print("*",end="")
+#           print()
 
 
 
@@ -117,8 +126,9 @@ def main(n):
     # pattern3(n)
     # pattern4(n)
     #  pattern5(n)
-     pattern6(n)
+    #  pattern6(n)
     #  pattern7(n)
     #  pattern8(n)
     #  pattern9(n)
+     pattern10(n)
 main(5)    
