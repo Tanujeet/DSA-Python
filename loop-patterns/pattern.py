@@ -25,8 +25,12 @@
 
 
 
-
-
+#pattern 4
+# def pattern4(n):
+#     for i in range(n):
+#         for j in range(i):
+#             print(i,end="")
+#         print()
 
 
 
