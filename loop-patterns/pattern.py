@@ -136,6 +136,48 @@
 #           print()
        
 
+#pattern 13
+# def pattern13(n):
+#      count =1
+#      for i in range(n):
+#           for j in range(i+1):
+#                print(count,end=" ")
+#                count = count + 1
+#           print()
+
+
+
+
+#pattern 14
+# def pattern14(n):
+#      for i in range(n):
+#           for j in range(i+1):
+#                print(chr(65+j),end="")
+#           print()
+
+
+
+
+#pattern 15
+def pattern15(n):
+     for i in range(n):
+          for j in range(n-i):
+               print(chr(65+j),end="")
+          print()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -153,10 +195,10 @@ def main(n):
     #  pattern9(n)
     #  pattern10(n)
     #  pattern11(n)
-     pattern12(n)
+    #  pattern12(n)
     #  pattern13(n)
     #  pattern14(n)
-    #  pattern15(n)
+     pattern15(n)
     #  pattern16(n)
     #  pattern17(n)
 main(5)    
