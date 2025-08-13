@@ -10,6 +10,8 @@
 #pattern 2
 def pattern2(n):
     for i in range(n):
+        for j in range(i):
+            print("*",end="")
         print()
 
 
@@ -22,5 +24,6 @@ def pattern2(n):
 
 
 def main(n):
-    pattern1(n)
+    # pattern1(n)
+    pattern2(n)
 main(5)    
