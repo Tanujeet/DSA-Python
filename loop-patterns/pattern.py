@@ -112,8 +112,19 @@
 
 
 
+#pattern 11
+# def pattern11(n):
+#      for i in range(n):
+         
+#           start = 1 if i % 2 == 0 else 0
+#           for j in range(i+1):
+#               print(start,end="")
+#               start = (start + 1) % 2
+#           print()
+               
 
-
+    
+       
 
 
 
@@ -130,5 +141,11 @@ def main(n):
     #  pattern7(n)
     #  pattern8(n)
     #  pattern9(n)
-     pattern10(n)
+    #  pattern10(n)
+     pattern11(n)
+    #  pattern13(n)
+    #  pattern14(n)
+    #  pattern15(n)
+    #  pattern16(n)
+    #  pattern17(n)
 main(5)    
