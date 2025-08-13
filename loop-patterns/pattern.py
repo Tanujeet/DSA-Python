@@ -33,10 +33,34 @@
 #         print()
 
 
+#pattern 5
+def pattern5(n):
+     for i in range(n):
+          for j in range(n-i):
+               print("*",end="")
+          print()
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 def main(n):
     # pattern1(n)
     # pattern2(n)
     # pattern3(n)
-    pattern4(n)
+    # pattern4(n)
+    #  pattern5(n)
+     pattern6(n)
+    #  pattern7(n)
+    #  pattern8(n)
+    #  pattern9(n)
 main(5)    
