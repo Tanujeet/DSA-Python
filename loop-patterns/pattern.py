@@ -124,6 +124,16 @@
                
 
     
+#pattern 12
+# def pattern12(n):
+#      for i in range(1,n+1):
+#           for j in range(1,i+1):
+#                print(j,end="")
+#           for j in range(2*(n-i)):
+#                print(" ",end="")
+#           for j in range(i,0,-1):
+#                print(j,end="")
+#           print()
        
 
 
@@ -142,7 +152,8 @@ def main(n):
     #  pattern8(n)
     #  pattern9(n)
     #  pattern10(n)
-     pattern11(n)
+    #  pattern11(n)
+     pattern12(n)
     #  pattern13(n)
     #  pattern14(n)
     #  pattern15(n)
