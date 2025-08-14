@@ -72,11 +72,11 @@ import math
 
 #Given an integer N, check whether it is prime or not. A prime number is a number that is only divisible by 1 and itself and the total number of divisors is 2.
 
-# n = 1
+# n = 5
 # i = 2
 # is_prime = True
-# while i <= n:
-#     if n%i == 0:
+# while i < n:
+#     if n % i == 0:
 #         is_prime=False
 #         break
 #     i += 1
