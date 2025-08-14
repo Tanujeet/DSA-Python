@@ -251,7 +251,7 @@ def pattern21(n):
 
 
 
-
+#pattern 22
 
 
 
