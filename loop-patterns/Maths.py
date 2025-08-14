@@ -1,10 +1,10 @@
 #extraction of numbers in reverse
 
-n = 7780
-while(n>0):
-    lastdigit = n % 10
-    print(lastdigit)
-    n = n//10
+# n = 7780
+# while(n>0):
+#     lastdigit = n % 10
+#     print(lastdigit)
+#     n = n//10
  
   
 
@@ -12,10 +12,20 @@ while(n>0):
 
 #count digits
 
-n = 7780
-count = 0
-while(n>0):
-    count =count +1
-    n = n//10
-    print("your digit count is :",count)
+# n = 7780
+# count = 0
+# while(n>0):
+#     count =count +1
+#     n = n//10
+#     print("your digit count is :",count)
   
+
+
+# reverse 
+n=7789
+rev = 0 
+while n>0:
+    ld = n % 10
+    rev = (rev * 10 ) + ld
+    n = n // 10
+print(rev)
