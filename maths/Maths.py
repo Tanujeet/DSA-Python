@@ -1,0 +1,61 @@
+#Given an integer N, return the number of digits in N.
+
+# n=7789
+# count = 0
+# while (n > 0):
+#    count = count + 1
+#    lg = n % 10
+#    n= n //10
+# print("Your total digits are :",count)
+
+
+ # If a number has trailing zeros, then its reverse will not include them. For e.g., reverse of 10400 will be 401 instead of 00401.
+
+# n = 7789
+# rev = 0
+# while (n>0):
+#     lg=n %10
+#     rev =(rev * 10) +lg
+#     n=n//10
+# print(rev)
+
+# Given an integer N, return true if it is a palindrome else return false.
+
+# n = 121
+# rev = 0
+# dub = n
+# while n>0:
+#     lg=n %10
+#     rev =(rev * 10) +lg
+#     n=n//10
+# if dub == rev :
+#    print(True)
+# else:
+#    print(False)   
+
+
+#Given an integer N, return true it is an Armstrong number otherwise return false
+
+# n = 153
+# sum =0
+# dup = n
+# while n > 0 :
+#     ld = n % 10
+#     sum =  sum + (ld * ld * ld)
+#     n = n//10
+# print(sum)    
+# if dup == sum :
+#     print(True)
+# else:
+#     print(False)        
+
+
+
+#Given an integer N, return all divisors of N.
+
+# n = 36
+# i = 1
+# while i <= n:
+#   if n % i == 0:
+#     print(i)
+#   i += 1  
