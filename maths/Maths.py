@@ -66,7 +66,6 @@ import math
 #         if i != n // i:     
 #           divisors.append(n // i) 
 #     i += 1
-# print(divisors)
 # divisors.sort()
 # print(divisors)
 
