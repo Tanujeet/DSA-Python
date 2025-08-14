@@ -1,3 +1,5 @@
+import math 
+
 #Given an integer N, return the number of digits in N.
 
 # n=7789
@@ -53,9 +55,18 @@
 
 #Given an integer N, return all divisors of N.
 
-# n = 36
+
+# n = 55
 # i = 1
-# while i <= n:
-#   if n % i == 0:
-#     print(i)
-#   i += 1  
+# divisors = []
+# while i <= math.sqrt(n):
+#     if n % i == 0:
+     
+#         divisors.append(i)     
+#         if i != n // i:     
+#           divisors.append(n // i) 
+#     i += 1
+# print(divisors)
+# divisors.sort()
+# print(divisors)
+
