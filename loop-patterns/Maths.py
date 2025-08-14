@@ -22,6 +22,7 @@
 
 
 # reverse 
+
 # n=7789
 # rev = 0 
 # while n>0:
@@ -32,6 +33,7 @@
 
 
 #check palindrome
+
 # n=7789
 # rev = 0 
 # dup = n
@@ -47,6 +49,7 @@
 
 
 #Amrstrong number
+
 # n=371
 # sum  = 0
 # dup = n
@@ -59,3 +62,13 @@
 #     print(True)
 # else:
 #     print(False)        
+
+
+#print all division
+# n = 36
+# i = 1
+
+# while i <= n:
+#     if n % i == 0:   # agar i perfectly divide kare
+#         print(i)
+#     i += 1
