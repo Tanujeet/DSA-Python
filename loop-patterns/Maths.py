@@ -47,15 +47,15 @@
 
 
 #Amrstrong number
-n=7789
-sum  = 0
-dup = n
-while n>0:
-    ld = n%10
-    sum  = sum + (ld * ld * ld)
-    n = n // 10
-print(sum)    
-if dup == sum :
-    print(True)
-else:
-    print(False)        
+# n=371
+# sum  = 0
+# dup = n
+# while n>0:
+#     ld = n%10
+#     sum  = sum + (ld * ld * ld)
+#     n = n // 10
+# print(sum)    
+# if dup == sum :
+#     print(True)
+# else:
+#     print(False)        
