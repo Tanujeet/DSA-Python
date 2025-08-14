@@ -71,3 +71,5 @@
 #     if n % i == 0:   # agar i perfectly divide kare
 #         print(i)
 #     i += 1
+
+
