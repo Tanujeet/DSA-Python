@@ -32,15 +32,30 @@
 
 
 #check palindrome
+# n=7789
+# rev = 0 
+# dup = n
+# while n>0:
+#     ld = n % 10
+#     rev = (rev * 10 ) + ld
+#     n = n // 10
+
+# if dup == rev :
+#     print(True)
+# else:
+#     print(False)      
+
+
+#Amrstrong number
 n=7789
-rev = 0 
+sum  = 0
 dup = n
 while n>0:
-    ld = n % 10
-    rev = (rev * 10 ) + ld
+    ld = n%10
+    sum  = sum + (ld * ld * ld)
     n = n // 10
-
-if dup == rev :
+print(sum)    
+if dup == sum :
     print(True)
 else:
-    print(False)      
+    print(False)        
