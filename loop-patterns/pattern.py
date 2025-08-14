@@ -241,9 +241,9 @@ def pattern20(n):
 
 #pattern 21
 def pattern21(n):
-     for i in range(n):
-          for j in range():
-               print()
+     for i in range(n-1):
+          for j in range(n-1):
+               print("*",end="")
           print()
 
 
