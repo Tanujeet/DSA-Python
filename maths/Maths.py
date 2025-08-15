@@ -50,7 +50,6 @@ import math
 
 #Given an integer N, return all divisors of N.
 
-
 # n = 7789
 # i = 1
 # divisiors =[]
@@ -66,6 +65,7 @@ import math
 
 
 #Given an integer N, check whether it is prime or not. A prime number is a number that is only divisible by 1 and itself and the total number of divisors is 2.
+
 # n= 7789
 # i = 2
 # is_prime=True
@@ -78,3 +78,22 @@ import math
 #     print(True)
 # else:
 #     print(False)        
+
+# Given two integers N1 and N2, find their greatest common divisor.
+
+# n1=12
+# n2=9
+# i=min(n1,n2)
+# while i >= 1:
+#      if n1 % i == 0 and n2 % i == 0:
+#           print(i)
+#           break
+#      i -= 1
+
+#Euclidean algorithm
+
+# n1 = 110
+# n2 = 350
+# while n2 != 0:
+#      n1,n2=n2,n1%n2
+# print(n1)     
