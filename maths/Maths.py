@@ -3,22 +3,17 @@ import math
 #Given an integer N, return the number of digits in N.
 
 # n = 7789
-# count = 0
-# while n > 0:
+# count =0 
+# while n > 0 :
 #     ld = n % 10
-#     count = count +1 
+#     count += 1
 #     n = n // 10
-# print("your total digit :",count)
+# print(count)
 
  # If a number has trailing zeros, then its reverse will not include them. For e.g., reverse of 10400 will be 401 instead of 00401.
 
-# n=7789
-# rev= 0
-# while n > 0:
-#     ld = n % 10
-#     rev = rev * 10 + (ld)
-#     n = n // 10
-# print(rev)    
+#  
+
 
 # Given an integer N, return true if it is a palindrome else return false.
 
