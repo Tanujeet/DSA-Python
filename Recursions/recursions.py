@@ -29,3 +29,13 @@
 
 # reverse1(5,5)   
 
+
+#Given a number ‘N’, find out the sum of the first N natural numbers.
+
+
+# def summation(i,sum):
+#     if i < 1:
+#         print(sum)
+#         return
+#     summation(i-1,sum+i)
+# summation(3,0)    
