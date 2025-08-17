@@ -25,9 +25,10 @@
 # Print from N to 1 using Recursion
 
 # def reverse1(i,n):
-#     if i < 1:
+#     if i <= 1:
 #         return
 #     print(i)
 #     reverse1(i-1,n)
 
 # reverse1(5,5)   
+
