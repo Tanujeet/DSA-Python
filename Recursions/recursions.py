@@ -77,3 +77,27 @@
 #     sum1(i-1,sum*i)
 # sum1(3,1)    
 
+
+# you are given an array. The task is to reverse the array and print it.
+
+# def reverse1(arr,l,r):
+#     if l >= r:
+#         return
+#     arr[l],arr[r]=arr[r],arr[l]
+#     reverse1(arr,l+1,r-1)
+
+
+# arr = [1, 2, 3, 4, 5]
+# reverse1(arr, 0, len(arr)-1)
+# print(arr)
+
+
+# def reverse2(arr,i,n):
+#     if i >= n // 2 :
+#         return
+#     arr[i], arr[n-i-1] = arr[n-i-1], arr[i]
+#     reverse2(arr,i+1,n)
+
+# arr = [1, 2, 3, 4, 5]   
+# reverse2(arr,0,len(arr))
+# print(arr)
