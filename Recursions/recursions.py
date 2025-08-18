@@ -53,3 +53,26 @@
 #     return n + sum2(n-1)
 
 # print(sum2(3))
+
+
+# Given a number X,  print its factorial.
+
+
+#functional
+
+# def fact(n):
+#     if n == 0 or n == 1:
+#         return 1
+#     return n * fact(n-1)
+
+# print(fact(3))
+
+
+#parameter
+# def sum1(i,sum):
+#     if i < 1:
+#         print(sum)
+#         return
+#     sum1(i-1,sum*i)
+# sum1(3,1)    
+
