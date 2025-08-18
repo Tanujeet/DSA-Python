@@ -101,3 +101,17 @@
 # arr = [1, 2, 3, 4, 5]   
 # reverse2(arr,0,len(arr))
 # print(arr)
+
+
+
+# Given a string, check if the string is palindrome or not."  A string is said to be palindrome if the reverse of the string is the same as the string.
+
+# def f(arr,i,n):
+#     if i >= n //2:
+#         return True
+#     if arr[i] != arr[n-i-1]:
+#         return False
+#     return f(arr, i + 1, n)
+    
+# arr="MADAM"
+# print(f(arr,0,len(arr)))
