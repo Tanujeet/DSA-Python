@@ -34,9 +34,22 @@
 
 #Given a number ‘N’, find out the sum of the first N natural numbers.
 
+
+#parameter 
+
 # def sum1(i,sum):
 #     if i < 1:
 #         print(sum)
 #         return
 #     sum1(i-1,sum+i)
 # sum1(3,0)    
+
+
+#functional
+
+# def sum2(n):
+#     if n == 0:
+#         return 0
+#     return n + sum2(n-1)
+
+# print(sum2(3))
