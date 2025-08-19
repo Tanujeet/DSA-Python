@@ -1,34 +1,32 @@
 # Understand Recursion by printing something N times
-# def recursion(i,n):
-#     if i == n:
+
+# def f(i,n):
+#     while i == n:
 #         return
 #     print(i)
-#     recursion(i+1,n)
-# recursion(0,4)        
- 
-
+#     f(i+1,n)
+# f(0,5)
 
 # Print your Name N times using recursion
 
-# def recursion(i,n):
-#     if i == n:
+# def f(i,n):
+#     while i == n:
 #         return
 #     print("Harsh")
-#     recursion(i+1,n)
-# recursion(0,4)        
- 
+#     f(i+1,n)
+# f(0,5)
 
 
 # Print from N to 1 using Recursion
 
-
-# def recursion(i,n):
-#     if i < 1 :
+# def f(i,n):
+#     while i <= 1:
 #         return
 #     print(i)
-#     recursion(i-1,n)
-# recursion(5,5)        
- 
+#     f(i-1,n)
+# f(5,5)
+
+
    
 
 
@@ -37,58 +35,58 @@
 
 #parameter 
 
-# def sum1(i,sum):
-#     if i < 1:
+# def f(i,n, sum):
+#     if i > n:
 #         print(sum)
 #         return
-#     sum1(i-1,sum+i)
-# sum1(3,0)    
-
+#     f(i+1,n,sum+i)
+# n = 3
+# f(1,n,0)
 
 #functional
 
-# def sum2(n):
-#     if n == 0:
+# def f(n):
+#     if n == 0: 
 #         return 0
-#     return n + sum2(n-1)
+#     return n + f(n-1)
 
-# print(sum2(3))
+
+# N = 5
+# print(f(N))
+
 
 
 # Given a number X,  print its factorial.
 
 
 #functional
-
-# def fact(n):
+# def f(n):
 #     if n == 0 or n == 1:
 #         return 1
-#     return n * fact(n-1)
+#     return n * f(n-1)
 
-# print(fact(3))
-
+# print(f(3))
 
 #parameter
 
-# def sum1(i,sum):
+# def f(i,fact):
 #     if i < 1:
-#         print(sum)
+#         print(fact)
 #         return
-#     sum1(i-1,sum*i)
-# sum1(3,1)    
+#     f(i-1,fact*i)
+# f(3,1)
 
 
 # you are given an array. The task is to reverse the array and print it.
 
-# def reverse1(arr,l,r):
-#     if l >= r:
+# def f(arr,i,l):
+#     if i >=l:
 #         return
-#     arr[l],arr[r]=arr[r],arr[l]
-#     reverse1(arr,l+1,r-1)
-
-
-# arr = [1, 2, 3, 4, 5]
-# reverse1(arr, 0, len(arr)-1)
+#     arr[i],arr[l]=arr[l],arr[i]
+#     f(arr,i+1,l-1)
+                
+# arr=[1,2,3,4,5]
+# f(arr,0,len(arr)-1)
 # print(arr)
 
 
@@ -101,6 +99,7 @@
 # arr = [1, 2, 3, 4, 5]   
 # reverse2(arr,0,len(arr))
 # print(arr)
+
 
 
 

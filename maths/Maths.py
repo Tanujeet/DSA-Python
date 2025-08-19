@@ -24,7 +24,7 @@ print(rev)
 
 # Given an integer N, return true if it is a palindrome else return false.
 
-n= 7789
+n=7789
 rev = 0
 dup = n
 while n > 0:
