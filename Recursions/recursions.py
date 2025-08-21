@@ -60,13 +60,13 @@ print(f(4))
 
 #functional
 
-# def f(i,fact):
-#     if i < 1:
-#         print(fact)
-#         return
-#     f(i-1,fact*i)
+def f(i,fact):
+    if i < 1:
+        print(fact)
+        return
+    f(i-1,fact*i)
 
-# f(4,1)
+f(4,1)
 
 
 
@@ -74,11 +74,11 @@ print(f(4))
 #parameter
 
 
-# def f(n):
-#     if n == 0 or n == 1:
-#         return 1
-#     return n * f(n-1)
-# print(f(4))
+def f(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * f(n-1)
+print(f(4))
 
 
 
