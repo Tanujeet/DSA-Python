@@ -36,21 +36,22 @@ f(4,4)
 #Given a number ‘N’, find out the sum of the first N natural numbers.
 
 #parameter 
-# def f(i,sum):
-#     if i < 1:
-#         print(sum)
-#         return
-#     f(i-1,sum+i)
 
-# print(f(4,0))
+def f(i,sum):
+    if i < 1:
+        print(sum)
+        return
+    f(i-1,sum+i)
+
+print(f(4,0))
 
 #functional
 
-# def f(n):
-#     if n == 0:
-#         return 0
-#     return n + f(n-1)
-# print(f(4))
+def f(n):
+    if n == 0:
+        return 0
+    return n + f(n-1)
+print(f(4))
 
 
 
