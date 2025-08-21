@@ -119,8 +119,8 @@ print(f(arr,0,len(arr)))
 
 # Given an integer N. Print the Fibonacci series up to the Nth term
 
-# def f(n):
-#     if n <= 1:
-#         return n
-#     return f(n-1) + f(n-2)
-# print(f(6))
+def f(n):
+    if n <= 1:
+        return n
+    return f(n-1) + f(n-2)
+print(f(6))
