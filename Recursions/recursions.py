@@ -1,11 +1,12 @@
 # Understand Recursion by printing something N times
-# def f(i,n):
-#     if i == n:
-#         return
-#     print(i)
-#     f(i+1,n)
 
-# f(1,4)  
+def f(i,n):
+    if i == n:
+        return
+    print(i)
+    f(i+1,n)
+
+f(1,4)  
 
 # Print your Name N times using recursion
 
