@@ -11,13 +11,13 @@ f(1,4)
 # Print your Name N times using recursion
 
   
-# def f(i,n):
-#     if i == n:
-#         return
-#     print("Harsh")
-#     f(i+1,n)
+def f(i,n):
+    if i == n:
+        return
+    print("Harsh")
+    f(i+1,n)
 
-# f(1,4)  
+f(1,4)  
 
 
 # Print from N to 1 using Recursion
