@@ -23,13 +23,13 @@ f(1,4)
 # Print from N to 1 using Recursion
 
 
-# def f(i,n):
-#     if i <= 1:
-#         return
-#     print(i)
-#     f(i-1,n)
+def f(i,n):
+    if i <= 1:
+        return
+    print(i)
+    f(i-1,n)
 
-# f(4,4)  
+f(4,4)  
 
 
 
