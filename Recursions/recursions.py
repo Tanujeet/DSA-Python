@@ -1,58 +1,56 @@
 # Understand Recursion by printing something N times
-
 # def f(i,n):
 #     if i == n:
 #         return
 #     print(i)
 #     f(i+1,n)
-# f(0,4)    
+
+# f(1,4)  
 
 # Print your Name N times using recursion
 
-
+  
 # def f(i,n):
 #     if i == n:
 #         return
 #     print("Harsh")
 #     f(i+1,n)
-# f(0,4)    
+
+# f(1,4)  
 
 
 # Print from N to 1 using Recursion
 
+
 # def f(i,n):
 #     if i <= 1:
 #         return
-#     print(i-1)
+#     print(i)
 #     f(i-1,n)
-# f(5,5)    
 
-   
+# f(4,4)  
+
 
 
 #Given a number ‘N’, find out the sum of the first N natural numbers.
 
-
 #parameter 
-# def f(i,n,sum):
-#     while i > n:
+# def f(i,sum):
+#     if i < 1:
+#         print(sum)
 #         return
-#     print(sum)
-#     f(i+1,n,sum+i)
+#     f(i-1,sum+i)
 
-# n=3
-# f(1,n,0)
+# print(f(4,0))
 
 #functional
 
 # def f(n):
-#     if n == 0: 
+#     if n == 0:
 #         return 0
 #     return n + f(n-1)
+# print(f(4))
 
-
-# N = 5
-# print(f(N))
 
 
 # Given a number X,  print its factorial.
@@ -60,55 +58,59 @@
 
 #functional
 
-# def f(n):
-#     if n == 0 or n==1: 
-#         return 1
-#     return n * f(n-1)
+# def f(i,fact):
+#     if i < 1:
+#         print(fact)
+#         return
+#     f(i-1,fact*i)
+
+# f(4,1)
 
 
-# N = 5
-# print(f(N))
 
 
 #parameter
 
-# def f(i,fact):
-#     while i < 1:
-#         print(fact)
-#         return 
-#     f(i-1,fact*i)
+
+# def f(n):
+#     if n == 0 or n == 1:
+#         return 1
+#     return n * f(n-1)
+# print(f(4))
 
 
-# f(3,1)
+
 
 
 # you are given an array. The task is to reverse the array and print it.
-
 # def f(arr,i,l):
 #     if i >= l:
-#         return
-#     arr[i],arr[l]=arr[l],arr[i]
+#         return 
+#     arr[i],arr[l] =arr[l],arr[i]
 #     f(arr,i+1,l-1)
+
+
 # arr=[1,2,3,4,5]
 # f(arr,0,len(arr)-1)
 # print(arr)
 
 
 
-
 # Given a string, check if the string is palindrome or not."  A string is said to be palindrome if the reverse of the string is the same as the string.
 
-  
-# def f(arr,i,n):
-#     if i >= n //2:
+
+# def f(arr,i,l):
+#     if i >= l //2:
 #         return True
-#     if arr[i] != arr[n-i-1]:
+#     if arr[i] != arr[l-i-1]:
 #         return False
-#     return f(arr,i+1,n)
+#     return f(arr,i+1,l)
+ 
+
 
 # arr="MADAM"
-# f(arr,0,len(arr))
-# print(arr)
+# print(f(arr,0,len(arr)))
+
 
 
 
@@ -117,5 +119,5 @@
 # def f(n):
 #     if n <= 1:
 #         return n
-#     return f(n-1) +f(n-2)
-# print(f(5))
+#     return f(n-1) + f(n-2)
+# print(f(6))
