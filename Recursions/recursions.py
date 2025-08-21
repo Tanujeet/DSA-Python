@@ -102,17 +102,17 @@ print(arr)
 # Given a string, check if the string is palindrome or not."  A string is said to be palindrome if the reverse of the string is the same as the string.
 
 
-# def f(arr,i,l):
-#     if i >= l //2:
-#         return True
-#     if arr[i] != arr[l-i-1]:
-#         return False
-#     return f(arr,i+1,l)
+def f(arr,i,l):
+    if i >= l //2:
+        return True
+    if arr[i] != arr[l-i-1]:
+        return False
+    return f(arr,i+1,l)
  
 
 
-# arr="MADAM"
-# print(f(arr,0,len(arr)))
+arr="MADAM"
+print(f(arr,0,len(arr)))
 
 
 
