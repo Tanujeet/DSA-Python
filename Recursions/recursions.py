@@ -85,16 +85,17 @@ print(f(4))
 
 
 # you are given an array. The task is to reverse the array and print it.
-# def f(arr,i,l):
-#     if i >= l:
-#         return 
-#     arr[i],arr[l] =arr[l],arr[i]
-#     f(arr,i+1,l-1)
+
+def f(arr,i,l):
+    if i >= l:
+        return 
+    arr[i],arr[l] =arr[l],arr[i]
+    f(arr,i+1,l-1)
 
 
-# arr=[1,2,3,4,5]
-# f(arr,0,len(arr)-1)
-# print(arr)
+arr=[1,2,3,4,5]
+f(arr,0,len(arr)-1)
+print(arr)
 
 
 
