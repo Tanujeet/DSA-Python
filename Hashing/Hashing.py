@@ -1,14 +1,14 @@
 #  Given an array, we have found the number of occurrences of each element in the array.
 
-# def frequency(n,arr):
+# def frequency(arr,n):
 #     mp={}
-#     for i in range(n):
-#         if arr[i] in mp:
-#             mp[arr[i]] +=1
-#         else:
-#               mp[arr[i]]=1
-#     for x in mp:
-#          print(x,mp[x])
-# arr=[10,5,10,15,10,5]     
-# n = len(arr)
-# frequency(n,arr)              
+#     for n in arr:
+#         mp[n] = mp.get(n,0)+1
+#     print(mp)    
+        
+# arr=[10,5,15,10,5]
+# n=len(arr)
+# frequency(arr,n)
+
+
+# Given an array of size N. Find the highest and lowest frequency element.
