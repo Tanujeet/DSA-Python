@@ -42,4 +42,22 @@ from collections import Counter
 
 #First Unique Character in a String
 
+# def f(s):
+#     freq =Counter(s)
+#     for i ,ch in enumerate(s):
+#         if freq[ch] == 1:
+#             return i
+#     return -1
 
+
+# s="leetcode"
+# print(f(s))
+
+#Valid Anagram
+
+# def f(s,t):
+#     return Counter(s) == Counter(t)
+
+# s="anagram"
+# t="nagaram"
+# print(f(s,t))
