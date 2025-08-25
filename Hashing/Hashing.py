@@ -1,3 +1,5 @@
+from collections import Counter
+
 #  Given an array, we have found the number of occurrences of each element in the array.
 
 # def frequency(arr,n):
@@ -12,3 +14,30 @@
 
 
 # Given an array of size N. Find the highest and lowest frequency element.
+
+# def f(arr):
+#   freq = Counter(arr)
+#   maxelement = max(freq,key = freq.get)
+#   minelement = min(freq,key = freq.get)
+#   return (maxelement,minelement)
+
+# arr=[2,2,2,3,4,4]
+# print(f(arr))
+
+
+#two sum 
+
+# def f(nums,target):
+#     map={}
+#     for i , num in enumerate(nums):
+#         complement = target- num
+#         if complement in map:
+#             return [map[complement],i]
+#         map[num] = i 
+     
+
+# nums=[2,7,11,15]
+# target=9
+# print(f(nums,target))
+
+#First Unique Character in a String
