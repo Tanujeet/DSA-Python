@@ -73,16 +73,16 @@
 
 # Bubble Sort
 
-def f(arr):
-    n = len(arr)
-    flag = True
-    while flag :
-        flag = False
-        for i in range(1,n):
-            if arr[i-1] >  arr[i]:
-                flag = True
-                arr[i-1],arr[i]=arr[i],arr[i-1]
-    return arr
+# def f(arr):
+#     n = len(arr)
+#     flag = True
+#     while flag :
+#         flag = False
+#         for i in range(1,n):
+#             if arr[i-1] >  arr[i]:
+#                 flag = True
+#                 arr[i-1],arr[i]=arr[i],arr[i-1]
+#     return arr
 
-arr= [-5,3,2,1,-3,-3,7,2,2]       
-print(f(arr))
+# arr= [-5,3,2,1,-3,-3,7,2,2]       
+# print(f(arr))
