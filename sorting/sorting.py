@@ -144,3 +144,21 @@
 # sorted_arr, swaps = bubble_sort(arr)
 # print("Sorted Array:", sorted_arr)
 # print("Total Swaps:", swaps)
+
+
+
+# insertion sort
+
+def f(arr):
+    n= len(arr)
+    for i in range(n):
+        for j in range(i,0,-1):
+            if arr[j-1] > arr[j]:
+                arr[j-1],arr[j]= arr[j],arr[j-1]
+            else:
+                break
+    return arr        
+
+
+arr= [-5,3,2,1,-3,-3,7,2,2]           
+print(f(arr))     
