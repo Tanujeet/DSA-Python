@@ -149,17 +149,62 @@
 
 # insertion sort
 
-def f(arr):
-    n= len(arr)
-    for i in range(n):
-        for j in range(i,0,-1):
-            if arr[j-1] > arr[j]:
-                arr[j-1],arr[j]= arr[j],arr[j-1]
-            else:
-                break
-    return arr        
+# def f(arr):
+#     n= len(arr)
+#     for i in range(n):
+#         for j in range(i,0,-1):
+#             if arr[j-1] > arr[j]:
+#                 arr[j-1],arr[j]= arr[j],arr[j-1]
+#             else:
+#                 break
+#     return arr        
 
 
-arr= [-5,3,2,1,-3,-3,7,2,2]           
-print(f(arr))     
+# arr= [-5,3,2,1,-3,-3,7,2,2]           
+# print(f(arr))     
 
+
+
+# total number of swaps happended
+
+# def f(arr):
+#     n= len(arr)
+#     count = 0
+#     for i in range(n):
+#         for j in range(i,0,-1):
+#             if arr[j-1] > arr[j]:
+#                 arr[j-1],arr[j]= arr[j],arr[j-1]
+#                 count += 1
+#             else:
+#                 break
+#     return arr,count        
+
+
+# arr= [-5,3,2,1,-3,-3,7,2,2]
+# inserted_arr,swap = f(arr)
+# print("Sorted Array",inserted_arr)         
+# print("Swaps taken",swap)         
+  
+
+# After inserting each element into the sorted part of the array, print the current state of the array.
+  
+# def insertion_sort_verbose(arr):
+#     n = len(arr)
+#     swap_count = 0
+
+#     for i in range(1, n):
+#         for j in range(i, 0, -1):
+#             if arr[j-1] > arr[j]:
+#                 arr[j-1], arr[j] = arr[j], arr[j-1]  # Swap
+#                 swap_count += 1
+#             else:
+#                 break
+#         print(f"Array after inserting element at index {i}: {arr}")
+
+#     print("\nSorted Array:", arr)
+#     print("Total swaps:", swap_count)
+#     return arr, swap_count
+
+
+# arr = [4, -1, 7, 3, 0, -5, 2]
+# insertion_sort_verbose(arr)
