@@ -73,6 +73,8 @@
 
 # Bubble Sort
 
+# asending order
+
 # def bubble_sort(arr):
 #     n = len(arr)
 #     for i in range(n):
@@ -85,3 +87,60 @@
 
 # arr= [-5,3,2,1,-3,-3,7,2,2]       
 # print(bubble_sort(arr))
+
+
+#descending order
+
+# def bubble_sort(arr):
+#     n = len(arr)
+#     for i in range(n):
+#         for j in range(0, n-i-1):
+#             if arr[j] < arr[j+1]:
+#                 arr[j], arr[j+1] = arr[j+1], arr[j]
+#     return arr
+
+
+
+# arr= [-5,3,2,1,-3,-3,7,2,2]       
+# print(bubble_sort(arr))
+
+
+# check if array is already sorted or not 
+
+# def f(arr):
+#     n = len(arr)
+#     for i in range(n):
+#         flag = False
+#         for j in range(0,n-i-1):
+#             if arr [j] > arr[j+1]:
+#                 arr[j],arr[j+1]=arr[j+1],arr[j]
+#                 flag = True
+#     if flag:
+#         print("Array was NOT sorted")
+#     else :
+#         print("Array is already sorted")
+  
+
+
+# arr=[1,2,3,4,5]
+# print(f(arr))       
+
+#Bubble Sort a nearly sorted array Try counting number of swaps needed
+
+# def bubble_sort(arr):
+#     n = len(arr)
+#     count = 0
+#     for i in range(n):
+#         for j in range(0, n-i-1):s
+#             if arr[j] > arr[j+1]:
+#                 arr[j], arr[j+1] = arr[j+1], arr[j]
+#                 count +=1
+#     return arr,count
+
+
+
+
+# arr=[1,2,3,5,4]          
+# sorted_arr, swaps = bubble_sort(arr)
+# print("Sorted Array:", sorted_arr)
+# print("Total Swaps:", swaps)
