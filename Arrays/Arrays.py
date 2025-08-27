@@ -54,3 +54,20 @@
 
 # arr = [1,2,4,5,1]
 # print(f(arr))
+
+
+# Check if the array is sorted
+
+def is_sorted(arr):
+    n = len(arr)
+    for i in range(1,n):
+        if arr[i] <= arr[i-1]:
+            return False
+    return True         
+
+
+
+print(is_sorted([1, 2, 3, 4]))   
+print(is_sorted([1, 5, 3, 4]))   
+print(is_sorted([10]))          
+print(is_sorted([])) 
