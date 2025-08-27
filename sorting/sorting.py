@@ -189,6 +189,7 @@
 # After inserting each element into the sorted part of the array, print the current state of the array.
   
 # def insertion_sort_verbose(arr):
+
 #     n = len(arr)
 #     swap_count = 0
 
@@ -208,3 +209,26 @@
 
 # arr = [4, -1, 7, 3, 0, -5, 2]
 # insertion_sort_verbose(arr)
+
+
+
+#Merged Sort / Divide and conquerer algo
+
+# Quick sort 
+
+# def f(arr):
+#     if len(arr) <= 1:
+#         return arr
+
+#     p = arr[-1]  # pivot = last element
+#     L = [x for x in arr[ :-1] if x <= p]   # left subarray
+#     R = [x for x in arr[ :-1] if x > p]   # right subarray
+
+#     L = f(L)   # recursive sort left
+#     R = f(R)   # recursive sort right
+
+#     return L + [p] + R
+
+
+# arr = [-5, 3, 2, 1, -3, -3, 7, 2, 2]
+# print(f(arr))
