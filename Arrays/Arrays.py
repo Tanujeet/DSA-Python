@@ -75,14 +75,32 @@
 
 # Remove duplicates from Sorted array
 
-#brute approach
+
+
+# Brute force approach
 
 # def f(arr):
-#     n =len(arr)
-#     st = set()
+#     n = len(arr)
+#     res = []
 #     for i in range(n):
-#         st.add(arr[i])
-#     return st    
+#         if arr[i] not in res:  
+#             res.append(arr[i])
+#     return res
 
-# arr =[1,1,2,2,2,3,3]
-# print(f(arr))
+# arr = [1,1,2,2,2,3,3]
+# print(f(arr))   
+
+
+
+# better Approach
+
+# def f(arr):
+#     n = len(arr)
+#     i = 0
+#     for j in range(1,n):
+#         if arr[i] !=  arr[j]:
+#             arr[i+1]= arr[j]
+#             i +=1
+#     return i+1        
+# arr = [1,1,2,2,2,3,3]
+# print(f(arr)) 
