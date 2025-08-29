@@ -140,10 +140,10 @@ def bubble_sort(arr):
 
 
 
-# arr=[1,2,3,5,4]          
-# sorted_arr, swaps = bubble_sort(arr)
-# print("Sorted Array:", sorted_arr)
-# print("Total Swaps:", swaps)
+arr=[1,2,3,5,4]          
+sorted_arr, swaps = bubble_sort(arr)
+print("Sorted Array:", sorted_arr)
+print("Total Swaps:", swaps)
 
 
 
