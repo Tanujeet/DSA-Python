@@ -216,19 +216,19 @@ insertion_sort_verbose(arr)
 
 # Quick sort 
 
-# def f(arr):
-#     if len(arr) <= 1:
-#         return arr
+def f(arr):
+    if len(arr) <= 1:
+        return arr
 
-#     p = arr[-1]  # pivot = last element
-#     L = [x for x in arr[ :-1] if x <= p]   # left subarray
-#     R = [x for x in arr[ :-1] if x > p]   # right subarray
+    p = arr[-1]  # pivot = last element
+    L = [x for x in arr[ :-1] if x <= p]   # left subarray
+    R = [x for x in arr[ :-1] if x > p]   # right subarray
 
-#     L = f(L)   # recursive sort left
-#     R = f(R)   # recursive sort right
+    L = f(L)   # recursive sort left
+    R = f(R)   # recursive sort right
 
-#     return L + [p] + R
+    return L + [p] + R
 
 
-# arr = [-5, 3, 2, 1, -3, -3, 7, 2, 2]
-# print(f(arr))
+arr = [-5, 3, 2, 1, -3, -3, 7, 2, 2]
+print(f(arr))
