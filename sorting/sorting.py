@@ -32,23 +32,23 @@ print(f(c))
 
 # Count Swaps During Selection Sort
 
-# c=[64, 25, 12, 22, 11] 
-# def f(arr):
-#     n = len(arr)
-#     count=0
-#     for i in range(n):
-#         min=0
-#         for j in range(i+1,n):
-#             if arr[j] < arr[min]:
-#                 min = j
-#         if min != i:
-#             arr[i],arr[min] = arr[min],arr[i]
-#             count +=1     
-#     return arr , count
+c=[64, 25, 12, 22, 11] 
+def f(arr):
+    n = len(arr)
+    count=0
+    for i in range(n):
+        min=0
+        for j in range(i+1,n):
+            if arr[j] < arr[min]:
+                min = j
+        if min != i:
+            arr[i],arr[min] = arr[min],arr[i]
+            count +=1     
+    return arr , count
 
-# sorted_arr, swaps = f(c)
-# print("Sorted Array:", sorted_arr)
-# print("Total Swaps:", swaps)
+sorted_arr, swaps = f(c)
+print("Sorted Array:", sorted_arr)
+print("Total Swaps:", swaps)
 
 
 #Find Kth Smallest Element
