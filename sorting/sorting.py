@@ -188,27 +188,27 @@ print("Swaps taken",swap)
 
 # After inserting each element into the sorted part of the array, print the current state of the array.
   
-# def insertion_sort_verbose(arr):
+def insertion_sort_verbose(arr):
 
-#     n = len(arr)
-#     swap_count = 0
+    n = len(arr)
+    swap_count = 0
 
-#     for i in range(1, n):
-#         for j in range(i, 0, -1):
-#             if arr[j-1] > arr[j]:
-#                 arr[j-1], arr[j] = arr[j], arr[j-1]  # Swap
-#                 swap_count += 1
-#             else:
-#                 break
-#         print(f"Array after inserting element at index {i}: {arr}")
+    for i in range(1, n):
+        for j in range(i, 0, -1):
+            if arr[j-1] > arr[j]:
+                arr[j-1], arr[j] = arr[j], arr[j-1]  # Swap
+                swap_count += 1
+            else:
+                break
+        print(f"Array after inserting element at index {i}: {arr}")
 
-#     print("\nSorted Array:", arr)
-#     print("Total swaps:", swap_count)
-#     return arr, swap_count
+    print("\nSorted Array:", arr)
+    print("Total swaps:", swap_count)
+    return arr, swap_count
 
 
-# arr = [4, -1, 7, 3, 0, -5, 2]
-# insertion_sort_verbose(arr)
+arr = [4, -1, 7, 3, 0, -5, 2]
+insertion_sort_verbose(arr)
 
 
 
