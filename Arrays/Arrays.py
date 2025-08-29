@@ -106,7 +106,7 @@
 # print(f(arr)) 
 
 
-#Left Rotate an array by one place
+# Left Rotate an array by one place
 
 # def f(nums):
 #     temp = nums[0]
@@ -118,3 +118,24 @@
 
 # nums=[1,2,3,4,5]
 # print(f(nums))
+
+
+# Left Rotate an array by K place
+
+
+def leftRotate(nums, k):
+    n = len(nums)
+    k = k % n  
+
+    
+    temp = nums[:k]
+
+   
+    for i in range(k, n):
+        nums[i-k] = nums[i]
+
+   
+    for i in range(k):
+        nums[n-k+i] = temp[i]
+
+    return nums
