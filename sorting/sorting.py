@@ -167,23 +167,23 @@ print(f(arr))
 
 # total number of swaps happended
 
-# def f(arr):
-#     n= len(arr)
-#     count = 0
-#     for i in range(n):
-#         for j in range(i,0,-1):
-#             if arr[j-1] > arr[j]:
-#                 arr[j-1],arr[j]= arr[j],arr[j-1]
-#                 count += 1
-#             else:
-#                 break
-#     return arr,count        
+def f(arr):
+    n= len(arr)
+    count = 0
+    for i in range(n):
+        for j in range(i,0,-1):
+            if arr[j-1] > arr[j]:
+                arr[j-1],arr[j]= arr[j],arr[j-1]
+                count += 1
+            else:
+                break
+    return arr,count        
 
 
-# arr= [-5,3,2,1,-3,-3,7,2,2]
-# inserted_arr,swap = f(arr)
-# print("Sorted Array",inserted_arr)         
-# print("Swaps taken",swap)         
+arr= [-5,3,2,1,-3,-3,7,2,2]
+inserted_arr,swap = f(arr)
+print("Sorted Array",inserted_arr)         
+print("Swaps taken",swap)         
   
 
 # After inserting each element into the sorted part of the array, print the current state of the array.
