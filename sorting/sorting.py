@@ -107,23 +107,23 @@ print(bubble_sort(arr))
 
 # check if array is already sorted or not 
 
-# def f(arr):
-#     n = len(arr)
-#     for i in range(n):
-#         flag = False
-#         for j in range(0,n-i-1):
-#             if arr [j] > arr[j+1]:
-#                 arr[j],arr[j+1]=arr[j+1],arr[j]
-#                 flag = True
-#     if flag:
-#         print("Array was NOT sorted")
-#     else :
-#         print("Array is already sorted")
+def f(arr):
+    n = len(arr)
+    for i in range(n):
+        flag = False
+        for j in range(0,n-i-1):
+            if arr [j] > arr[j+1]:
+                arr[j],arr[j+1]=arr[j+1],arr[j]
+                flag = True
+    if flag:
+        print("Array was NOT sorted")
+    else :
+        print("Array is already sorted")
   
 
 
-# arr=[1,2,3,4,5]
-# print(f(arr))       
+arr=[1,2,3,4,5]
+print(f(arr))       
 
 #Bubble Sort a nearly sorted array Try counting number of swaps needed
 
