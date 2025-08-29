@@ -53,22 +53,22 @@ print("Total Swaps:", swaps)
 
 #Find Kth Smallest Element
 
-# def f(arr,k):
-#     n=len(arr)
-#     for i in range(k):
-#         min = i
-#         for j in range(i+1,n):
-#             if arr[j] < arr[min]:
-#                 min = j
-#         arr[i],arr[min]= arr[min],arr[i]       
+def f(arr,k):
+    n=len(arr)
+    for i in range(k):
+        min = i
+        for j in range(i+1,n):
+            if arr[j] < arr[min]:
+                min = j
+        arr[i],arr[min]= arr[min],arr[i]       
                 
-#     return arr[k-1]
+    return arr[k-1]
 
 
 
-# arr = [7, 10, 4, 3, 20, 15]
-# k = 3
-# print("Kth Smallest Element:", f(arr, k))
+arr = [7, 10, 4, 3, 20, 15]
+k = 3
+print("Kth Smallest Element:", f(arr, k))
 
 
 # Bubble Sort
