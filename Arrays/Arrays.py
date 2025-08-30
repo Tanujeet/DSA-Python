@@ -123,19 +123,39 @@
 # Left Rotate an array by K place
 
 
-def leftRotate(nums, k):
-    n = len(nums)
-    k = k % n  
+# def leftRotate(nums, k):
+#     n=len(nums)
+#     k = k % n
+#     nums[:]= nums[-k:]+nums[:-k]
+ 
+#     return nums
 
+# nums=[1,2,3,4,5,6]
+# k=2
+# print(leftRotate(nums,k))
+
+
+# moves zero to the end 
+
+# Brute force
+def f(arr):
+    temp=[]
+    n= len(arr)
+    for i in range(n):
+        if arr[i] != 0:
+            temp.append(arr[i])
+   
+    for i in range(len(temp)):
+        arr[i]=temp[i]
     
-    temp = nums[:k]
 
-   
-    for i in range(k, n):
-        nums[i-k] = nums[i]
+    nz=len(temp)
+    for i in range(nz,n):
+        arr[i]=0
 
-   
-    for i in range(k):
-        nums[n-k+i] = temp[i]
+    return arr
 
-    return nums
+arr=[0,1,0,3,12]
+print(f(arr))
+
+#Optimized Approach
