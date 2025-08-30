@@ -174,3 +174,17 @@
 # arr=[0,0,1,0,12,3]            
 # print(f(arr))
     
+
+
+#linear search
+
+# def f(arr,target):
+#     n = len(arr)
+#     for i in range(n):
+#         if arr[i]== target:
+#             return i
+#     return -1     
+
+# arr = [1,3,2,6,4]
+# target = 6
+# print(f(arr,target))
