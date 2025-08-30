@@ -138,24 +138,39 @@
 # moves zero to the end 
 
 # Brute force
-def f(arr):
-    temp=[]
-    n= len(arr)
-    for i in range(n):
-        if arr[i] != 0:
-            temp.append(arr[i])
+# def f(arr):
+#     temp=[]
+#     n= len(arr)
+#     for i in range(n):
+#         if arr[i] != 0:
+#             temp.append(arr[i])
    
-    for i in range(len(temp)):
-        arr[i]=temp[i]
+#     for i in range(len(temp)):
+#         arr[i]=temp[i]
     
 
-    nz=len(temp)
-    for i in range(nz,n):
-        arr[i]=0
+#     nz=len(temp)
+#     for i in range(nz,n):
+#         arr[i]=0
 
-    return arr
+#     return arr
 
-arr=[0,1,0,3,12]
-print(f(arr))
+# arr=[0,1,0,3,12]
+# print(f(arr))
 
 #Optimized Approach
+
+# def f(arr):
+#     n= len(arr)
+#     pos = 0
+#     for i in range(n):
+#         if arr[i]!=0:
+#             arr[pos]=arr[i]
+#             pos +=1
+#     for i in range(pos,n):
+#         arr[i] =0
+#     return arr
+
+# arr=[0,0,1,0,12,3]            
+# print(f(arr))
+    
