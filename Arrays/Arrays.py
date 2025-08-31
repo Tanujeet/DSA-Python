@@ -192,20 +192,23 @@
 
 # Find the Union sorted arrays
 
-# def f(arr1,arr2):
-#     union =set()
-#     for x in arr1:
-#         union.add(x)
-#     for y in arr2:
-#         union.add(y)
 
-#     return sorted(list(union))         
+#brute force
 
-# arr1=[1,1,2,3,4,5]
-# arr2=[2,3,4,4,5,6]
-# print(f(arr1,arr2))
+def f(arr1,arr2):
+    union =set()
+    for x in arr1:
+        union.add(x)
+    for y in arr2:
+        union.add(y)
+
+    return sorted(list(union))         
+
+arr1=[1,1,2,3,4,5]
+arr2=[2,3,4,4,5,6]
+print(f(arr1,arr2))
                  
         
-
+#optimal approach
 
     
