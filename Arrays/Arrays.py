@@ -210,5 +210,38 @@
                  
         
 #optimal approach
+def f(arr1, arr2):
+    n1 = len(arr1)
+    n2 = len(arr2)
+    i = 0
+    j = 0
+    unionArr = []
 
-    
+    while i < n1 and j < n2:
+        if arr1[i] <= arr2[j]:
+            if len(unionArr) == 0 or unionArr[-1] != arr1[i]:
+                unionArr.append(arr1[i])
+            i += 1
+        else:
+            if len(unionArr) == 0 or unionArr[-1] != arr2[j]:
+                unionArr.append(arr2[j])
+            j += 1
+
+    # Baaki bache huye elements add karo
+    while i < n1:
+        if len(unionArr) == 0 or unionArr[-1] != arr1[i]:
+            unionArr.append(arr1[i])
+        i += 1
+
+    while j < n2:
+        if len(unionArr) == 0 or unionArr[-1] != arr2[j]:
+            unionArr.append(arr2[j])
+        j += 1
+
+    return unionArr
+
+
+# Example
+arr1 = [1,1,2,3,4,5]
+arr2 = [2,3,4,4,5,6]
+print(f(arr1, arr2))
