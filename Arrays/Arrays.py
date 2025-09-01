@@ -245,3 +245,6 @@
 # arr1 = [1,1,2,3,4,5]
 # arr2 = [2,3,4,4,5,6]
 # print(f(arr1, arr2))
+
+
+#intersection of sorted Arrays
