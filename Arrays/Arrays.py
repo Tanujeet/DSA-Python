@@ -274,3 +274,59 @@
 # print(intersection(arr1,arr2))
 
   
+
+#missing number
+
+
+
+#Brute force
+
+# def f(arr1):
+#     n = len(arr1)
+
+#     for i in range(n):
+#         flag = 0
+#         for j in range(n-1):
+#             if arr1[j] == i:
+#                 flag=1
+#                 break
+#     if flag == 0:
+#         return i        
+    
+# arr1=[1,2,4,5]
+# print(f(arr1))    
+
+
+# optimal approach
+# def f(arr):
+#     n = len(arr)
+#     s1= n * n+1 %2
+#     s2 =0
+#     for i in range(n):
+#         s2 = arr[i]
+
+#     return s1-s2    
+
+
+# arr=[1,2,4,5]
+# print(f(arr))
+
+
+#Maxium consectuve number
+
+def f(arr):
+    count=0
+    maxi =0 
+    n = len(arr)
+    for i in range(n):
+        if arr[i]==1:
+            count +=1
+            maxi = max(maxi,count)
+        else:
+            count =0
+
+    return maxi
+
+
+arr=[1,1,0,1,1,1,0,1]            
+print(f(arr))
