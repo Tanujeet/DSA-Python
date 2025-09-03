@@ -330,3 +330,42 @@
 
 # arr=[1,1,0,1,1,1,0,1]            
 # print(f(arr))
+
+
+
+#longest subarray with sum k
+
+# brute force    
+def f(arr,k):
+    n=len(arr)
+    maxl=0
+    for i in range(n):
+        for j in range(i,n):
+            s=0
+            for x in range(i,j+1):
+                s+=arr[x]
+            if s == k:
+                maxl = max(maxl,j-i+1)
+    return maxl
+
+arr=[2,3,5,1,9]
+k=10
+print(f(arr,k))
+
+
+#better 
+
+def f(arr, target):
+    n = len(arr)
+    maxl = 0
+    for i in range(n):
+        s = 0
+        for j in range(i, n):
+            s += arr[j]   # direct sum karte jao
+            if s == target:
+                maxl = max(maxl, j - i + 1)
+    return maxl
+
+arr = [2, 3, 5, 1, 9]
+k = 10
+print(f(arr, k))  # 3
