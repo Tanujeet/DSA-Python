@@ -355,17 +355,17 @@ print(f(arr,k))
 
 #better 
 
-def f(arr, target):
-    n = len(arr)
-    maxl = 0
-    for i in range(n):
-        s = 0
-        for j in range(i, n):
-            s += arr[j]   # direct sum karte jao
-            if s == target:
-                maxl = max(maxl, j - i + 1)
-    return maxl
+# def f(arr, target):
+#     n = len(arr)
+#     maxl = 0
+#     for i in range(n):
+#         s = 0
+#         for j in range(i, n):
+#             s += arr[j]   # direct sum karte jao
+#             if s == target:
+#                 maxl = max(maxl, j - i + 1)
+#     return maxl
 
-arr = [2, 3, 5, 1, 9]
-k = 10
-print(f(arr, k))  # 3
+# arr = [2, 3, 5, 1, 9]
+# k = 10
+# print(f(arr, k))  # 3
