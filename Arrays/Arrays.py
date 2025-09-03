@@ -373,31 +373,31 @@
 
 #optimal 
 
-def longest_subarray_sum_k(arr, k):
-    n = len(arr)
-    prefix_sum = 0
-    mp = {}  # prefix_sum -> index
-    max_len = 0
+# def longest_subarray_sum_k(arr, k):
+#     n = len(arr)
+#     prefix_sum = 0
+#     mp = {}  # prefix_sum -> index
+#     max_len = 0
 
-    for i in range(n):
-        prefix_sum += arr[i]
+#     for i in range(n):
+#         prefix_sum += arr[i]
 
-        # agar pura prefix hi k hai
-        if prefix_sum == k:
-            max_len = max(max_len, i + 1)
+#         # agar pura prefix hi k hai
+#         if prefix_sum == k:
+#             max_len = max(max_len, i + 1)
 
-        # agar prefix_sum - k pehle aa chuka hai
-        rem = prefix_sum - k
-        if rem in mp:
-            max_len = max(max_len, i - mp[rem])
+#         # agar prefix_sum - k pehle aa chuka hai
+#         rem = prefix_sum - k
+#         if rem in mp:
+#             max_len = max(max_len, i - mp[rem])
 
-        # sirf pehli baar store karte hain (shortest index rakho)
-        if prefix_sum not in mp:
-            mp[prefix_sum] = i
+#         # sirf pehli baar store karte hain (shortest index rakho)
+#         if prefix_sum not in mp:
+#             mp[prefix_sum] = i
 
-    return max_len
+#     return max_len
 
 
-arr = [2, 3, 5, 1, 9]
-k = 10
-print(longest_subarray_sum_k(arr, k))  # Output: 3 (subarray [2,3,5])
+# arr = [2, 3, 5, 1, 9]
+# k = 10
+# print(longest_subarray_sum_k(arr, k))  # Output: 3 (subarray [2,3,5])
