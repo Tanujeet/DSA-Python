@@ -1,3 +1,6 @@
+import math
+
+
 # Largest Element in an Array
 
 # def f(arr):
@@ -269,8 +272,8 @@
 #     return ans
 
 
-# arr1=[1,2,2,1]
-# arr2=[2,2]
+# arr1=[4,9,5]
+# arr2=[9,4,9,8,4]
 # print(intersection(arr1,arr2))
 
   
@@ -401,3 +404,34 @@
 # arr = [2, 3, 5, 1, 9]
 # k = 10
 # print(longest_subarray_sum_k(arr, k))  # Output: 3 (subarray [2,3,5])
+
+
+
+# Kadane's Algorithm : Maximum Subarray Sum in an Array
+
+# def f(arr):
+#     n = len(arr)
+#     maxi = -math.inf
+#     sum = 0
+#     for i in range(n):
+#         sum += arr[i]
+#         if sum > maxi:
+#             maxi=sum
+#         if sum < 0:
+#             sum = 0
+#         if maxi < 0:
+#             maxi=0
+
+
+#         i+=1
+      
+
+
+#     return maxi
+
+
+# arr=[-2, 1, -3, 4, -1, 2, 1, -5, 4]
+# print(f(arr))
+
+
+
