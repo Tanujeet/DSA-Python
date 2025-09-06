@@ -55,12 +55,12 @@ print(f(s))
 
 #Valid Anagram
 
-# def f(s,t):
-#     return Counter(s) == Counter(t)
+def f(s,t):
+    return Counter(s) == Counter(t)
 
-# s="anagram"
-# t="nagaram"
-# print(f(s,t))
+s="anagram"
+t="nagaram"
+print(f(s,t))
 
 #Majority element
 
