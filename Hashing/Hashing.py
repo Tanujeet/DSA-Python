@@ -15,14 +15,14 @@ frequency(arr,n)
 
 # Given an array of size N. Find the highest and lowest frequency element.
 
-# def f(arr):
-#   freq = Counter(arr)
-#   maxelement = max(freq,key = freq.get)
-#   minelement = min(freq,key = freq.get)
-#   return (maxelement,minelement)
+def f(arr):
+  freq = Counter(arr)
+  maxelement = max(freq,key = freq.get)
+  minelement = min(freq,key = freq.get)
+  return (maxelement,minelement)
 
-# arr=[2,2,2,3,4,4]
-# print(f(arr))
+arr=[2,2,2,3,4,4]
+print(f(arr))
 
 
 #two sum 
