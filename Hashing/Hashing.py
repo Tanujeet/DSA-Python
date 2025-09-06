@@ -64,11 +64,11 @@ print(f(s,t))
 
 #Majority element
 
-# def f(arr):
-#     freq = Counter(arr)
-#     for i, ch in freq.items():
-#         if ch > len(arr) // 2:
-#             return i
+def f(arr):
+    freq = Counter(arr)
+    for i, ch in freq.items():
+        if ch > len(arr) // 2:
+            return i
         
-# arr= [3,2,3]
-# print(f(arr))        
+arr= [3,2,3]
+print(f(arr))        
