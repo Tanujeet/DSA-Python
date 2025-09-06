@@ -27,18 +27,18 @@ print(f(arr))
 
 #two sum 
 
-# def f(nums,target):
-#     map={}
-#     for i , num in enumerate(nums):
-#         complement = target- num
-#         if complement in map:
-#             return [map[complement],i]
-#         map[num] = i 
+def f(nums,target):
+    map={}
+    for i , num in enumerate(nums):
+        complement = target- num
+        if complement in map:
+            return [map[complement],i]
+        map[num] = i 
      
 
-# nums=[2,7,11,15]
-# target=9
-# print(f(nums,target))
+nums=[2,7,11,15]
+target=9
+print(f(nums,target))
 
 #First Unique Character in a String
 
