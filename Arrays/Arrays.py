@@ -338,22 +338,22 @@ import math
 
 #longest subarray with sum k
 
-# brute force    
-# def f(arr,k):
-#     n=len(arr)
-#     maxl=0
-#     for i in range(n):
-#         for j in range(i,n):
-#             s=0
-#             for x in range(i,j+1):
-#                 s+=arr[x]
-#             if s == k:
-#                 maxl = max(maxl,j-i+1)
-#     return maxl
+brute force    
+def f(arr,k):
+    n=len(arr)
+    maxl=0
+    for i in range(n):
+        for j in range(i,n):
+            s=0
+            for x in range(i,j+1):
+                s+=arr[x]
+            if s == k:
+                maxl = max(maxl,j-i+1)
+    return maxl
 
-# arr=[2,3,5,1,9]
-# k=10
-# print(f(arr,k))
+arr=[2,3,5,1,9]
+k=10
+print(f(arr,k))
 
 
 #better 
