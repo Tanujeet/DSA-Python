@@ -532,3 +532,7 @@ import math
 #   [7, 8, 9]
 # ]
 # print(f(3, 3, arr))
+
+
+#rotate Matrix / image by 90 degrees
+
