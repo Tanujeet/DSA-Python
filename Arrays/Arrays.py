@@ -509,26 +509,26 @@ import math
 
 # Set Matrix Zeroes 
 
-def f(m, n, arr):
-    row = [0] * m
-    col = [0] * n
+# def f(m, n, arr):
+#     row = [0] * m
+#     col = [0] * n
     
-    for i in range(m):
-        for j in range(n):
-            if arr[i][j] == 0:
-                row[i] = 1
-                col[j] = 1
+#     for i in range(m):
+#         for j in range(n):
+#             if arr[i][j] == 0:
+#                 row[i] = 1
+#                 col[j] = 1
     
-    for i in range(m):
-        for j in range(n):
-            if row[i] == 1 or col[j] == 1:
-                arr[i][j] = 0
+#     for i in range(m):
+#         for j in range(n):
+#             if row[i] == 1 or col[j] == 1:
+#                 arr[i][j] = 0
 
-    return arr
+#     return arr
          
-arr = [
-  [1, 2, 3],
-  [4, 0, 6],
-  [7, 8, 9]
-]
-print(f(3, 3, arr))
+# arr = [
+#   [1, 2, 3],
+#   [4, 0, 6],
+#   [7, 8, 9]
+# ]
+# print(f(3, 3, arr))
