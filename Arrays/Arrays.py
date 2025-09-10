@@ -471,3 +471,7 @@ import math
 
 # arr=[3,1,-2,-5,2,-4]
 # print(f(arr))
+
+
+  
+# Longest Consecutive Sequence 
