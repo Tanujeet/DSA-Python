@@ -490,9 +490,9 @@ import math
 
 #     # Find the longest sequence
 #     for it in st:
-#         # if 'it' is a starting number
+#        
 #         if it - 1 not in st:
-#             # find consecutive numbers
+#     
 #             cnt = 1
 #             x = it
 #             while x + 1 in st:
