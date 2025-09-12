@@ -558,7 +558,7 @@ def printSpiral(mat):
     n = len(mat)
     m = len(mat[0]) 
   
-    # Initialize the pointers read for traversal.
+    
     top = 0
     left = 0
     bottom = n - 1
