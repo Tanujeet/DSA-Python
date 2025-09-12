@@ -555,8 +555,8 @@ def printSpiral(mat):
     
     ans = []
  
-    n = len(mat) # no. of rows
-    m = len(mat[0]) # no. of columns
+    n = len(mat)
+    m = len(mat[0]) 
   
     # Initialize the pointers read for traversal.
     top = 0
