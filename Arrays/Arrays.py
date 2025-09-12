@@ -584,7 +584,7 @@ def printSpiral(mat):
 
             bottom -= 1
 
-        # For moving bottom to top.
+      
         if (left <= right):
             for i in range(bottom, top - 1, -1):
                 ans.append(mat[i][left])
