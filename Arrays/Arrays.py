@@ -536,3 +536,14 @@ import math
 
 #rotate Matrix / image by 90 degrees
 
+# def f(arr):
+#     n=len(arr)
+#     for i in range(n):
+#         for j in range(i):
+#             arr[i][j],arr[j][i]=arr[j][i], arr[i][j]
+#     for i in range(n):
+#         arr[i].reverse()
+#     return arr            
+
+# arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# print(f(arr))        
