@@ -552,13 +552,13 @@ import math
 # Spiral Traversal of a Matrix
 
 def printSpiral(mat):
-    # Define ans array to store the result.
+    
     ans = []
  
     n = len(mat) # no. of rows
     m = len(mat[0]) # no. of columns
   
-    # Initialize the pointers reqd for traversal.
+    # Initialize the pointers read for traversal.
     top = 0
     left = 0
     bottom = n - 1
