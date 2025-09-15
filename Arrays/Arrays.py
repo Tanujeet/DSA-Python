@@ -605,29 +605,29 @@ import math
 
 #pascal triangle
 
-def generateRow(row):
-    ans = 1
-    ansRow = [1] #inserting the 1st element
+# def generateRow(row):
+#     ans = 1
+#     ansRow = [1] #inserting the 1st element
     
-    #calculate the rest of the elements:
-    for col in range(1, row):
-        ans = ans * (row - col)
-        ans = ans // col
-        ansRow.append(ans)
-    return ansRow
+#     #calculate the rest of the elements:
+#     for col in range(1, row):
+#         ans = ans * (row - col)
+#         ans = ans // col
+#         ansRow.append(ans)
+#     return ansRow
 
-def pascalTriangle(n):
-    ans = []
+# def pascalTriangle(n):
+#     ans = []
     
-    #store the entire pascal's triangle:
-    for row in range(1, n+1):
-        ans.append(generateRow(row))
-    return ans
+#     #store the entire pascal's triangle:
+#     for row in range(1, n+1):
+#         ans.append(generateRow(row))
+#     return ans
 
-if __name__ == '__main__':
-    n = 5
-    ans = pascalTriangle(n)
-    for it in ans:
-        for ele in it:
-            print(ele, end=" ")
-        print()
+# if __name__ == '__main__':
+#     n = 5
+#     ans = pascalTriangle(n)
+#     for it in ans:
+#         for ele in it:
+#             print(ele, end=" ")
+#         print()
