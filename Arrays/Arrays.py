@@ -633,3 +633,9 @@ import math
 #         print()
 
 # n/3 element
+
+def f(arr):
+    cnt1=0
+    cnt2=0
+    el1=None
+    el2=None
