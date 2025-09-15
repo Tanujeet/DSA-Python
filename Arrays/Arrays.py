@@ -665,3 +665,6 @@ import math
 
 # arr=[2,2,1,3,1,1,3,1,1]
 # print(f(arr))
+
+
+#3sum
