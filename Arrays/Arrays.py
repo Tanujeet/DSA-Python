@@ -634,34 +634,34 @@ import math
 
 # n/3 element
 
-def f(arr):
-    n= len(arr)
-    cnt1=0
-    cnt2=0
-    el1=None
-    el2=None
+# def f(arr):
+#     n= len(arr)
+#     cnt1=0
+#     cnt2=0
+#     el1=None
+#     el2=None
 
-    for i in range(n):
-        if cnt1 == 0 and el2 != arr[i] :
-            cnt1=1
-            el1=arr[i]
-        elif cnt2 == 0 and el1 != arr[i]:
-            cnt2 =1
-            el2=arr[i]    
-        elif el1 == arr[i]:
-            cnt1 +=1
-        elif el2 == arr[i]:
-            cnt2 +=1     
-        else:
-            cnt1 -=1    
-            cnt2 -=1    
+#     for i in range(n):
+#         if cnt1 == 0 and el2 != arr[i] :
+#             cnt1=1
+#             el1=arr[i]
+#         elif cnt2 == 0 and el1 != arr[i]:
+#             cnt2 =1
+#             el2=arr[i]    
+#         elif el1 == arr[i]:
+#             cnt1 +=1
+#         elif el2 == arr[i]:
+#             cnt2 +=1     
+#         else:
+#             cnt1 -=1    
+#             cnt2 -=1    
     
-    ans=[]
-    for candidate in [el1,el2]:
-        if candidate is not None and arr.count(candidate) >  n // 3:
-            ans.append(candidate)
+#     ans=[]
+#     for candidate in [el1,el2]:
+#         if candidate is not None and arr.count(candidate) >  n // 3:
+#             ans.append(candidate)
 
-    return ans
+#     return ans
 
-arr=[2,2,1,3,1,1,3,1,1]
-print(f(arr))
+# arr=[2,2,1,3,1,1,3,1,1]
+# print(f(arr))
