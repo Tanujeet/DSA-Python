@@ -689,9 +689,9 @@ def f(arr):
                 ans.append(temp)
                 j+=1
                 k-=1
-            while j < k  and arr[j]== arr[j-1]:
+        while j < k  and arr[j]== arr[j-1]:
                 j+=1
-            while j < k and arr[k] == arr[k+1]:
+        while j < k and arr[k] == arr[k+1]:
                 k-=1
     return ans                           
 
