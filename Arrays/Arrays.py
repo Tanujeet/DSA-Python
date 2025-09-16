@@ -669,3 +669,14 @@ import math
 
 #3sum
 
+def f(arr,target):
+    ans=[]
+    n=len(arr)
+    arr.sort()
+
+    for i in range(n):
+        if i > 0 and arr[i]==arr[i-1]:
+            continue
+        j,k=i+1,n-1
+
+        
