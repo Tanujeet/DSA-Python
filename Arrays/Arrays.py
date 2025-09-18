@@ -753,5 +753,5 @@ def maxLen(A):
     return maxi
 
 
-
+print(maxLen(A=[]))
                 
