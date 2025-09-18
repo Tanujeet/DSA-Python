@@ -755,3 +755,6 @@ import math
 
 # print(maxLen(A=[]))
                 
+
+
+#Count number of subarrays with given xor K
