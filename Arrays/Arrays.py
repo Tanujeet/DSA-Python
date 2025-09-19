@@ -768,4 +768,7 @@ def f(arr):
             ans.append(arr[1])
         else:    
             ans[-1][1]=max(ans[-1][1],arr[i][1])
+    return ans
 
+arr=[[1,3],[2,6],[8,10],[15,18]]
+print(f(arr))
