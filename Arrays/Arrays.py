@@ -757,5 +757,13 @@ import math
                 
 
 
-# 
+# Merge Overlapping Subintervals
+
+def f(arr):
+    n=len(arr)
+    ans=[]
+    arr.sort()
+    for i in range(n):
+        if not ans or arr[i][0]>ans[-1][1]:
+            ans.append(arr[1])
 
