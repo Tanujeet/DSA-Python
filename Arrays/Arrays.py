@@ -759,16 +759,16 @@ import math
 
 # Merge Overlapping Subintervals
 
-def f(arr):
-    n=len(arr)
-    ans=[]
-    arr.sort()
-    for i in range(n):
-        if not ans or arr[i][0]  > ans[-1][1]:
-            ans.append(arr[i])
-        else:    
-            ans[-1][1]=max(ans[-1][1],arr[i][1])
-    return ans
+# def f(arr):
+#     n=len(arr)
+#     ans=[]
+#     arr.sort()
+#     for i in range(n):
+#         if not ans or arr[i][0]  > ans[-1][1]:
+#             ans.append(arr[i])
+#         else:    
+#             ans[-1][1]=max(ans[-1][1],arr[i][1])
+#     return ans
 
-arr=[[1,3],[2,6],[8,10],[15,18]]
-print(f(arr))
+# arr=[[1,3],[2,6],[8,10],[15,18]]
+# print(f(arr))
