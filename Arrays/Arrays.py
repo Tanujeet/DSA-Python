@@ -766,4 +766,6 @@ def f(arr):
     for i in range(n):
         if not ans or arr[i][0]>ans[-1][1]:
             ans.append(arr[1])
+        else:    
+            ans[-1][1]=max(ans[-1][1],arr[i][1])
 
