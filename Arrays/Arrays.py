@@ -775,4 +775,12 @@ import math
 
 
 
-#
+# Find the repeating and missing number
+ 
+def f(arr):
+    n=len(arr)
+
+    hash = [0] * (n + 1) 
+
+    for i in range(n):
+        hash[i]+=arr[i]
