@@ -791,4 +791,5 @@ def f(arr):
             repeating=i
         elif hash[i]==0:
             missing=i    
-         
+        if repeating !=-1 and missing !=-1:
+            break 
