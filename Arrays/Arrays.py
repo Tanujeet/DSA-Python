@@ -788,5 +788,7 @@ def f(arr):
     repeating,missing=-1,-1
     for i in range(1,n+1):
         if hash[i]==2:
-            repeating=1
-            
+            repeating=i
+        elif hash[i]==0:
+            missing=i    
+         
