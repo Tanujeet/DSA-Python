@@ -793,3 +793,7 @@ def f(arr):
             missing=i    
         if repeating !=-1 and missing !=-1:
             break 
+    return[repeating,missing]
+
+arr=[3, 1, 2, 5, 4, 6, 7, 5]    
+print(f(arr))
