@@ -777,23 +777,32 @@ import math
 
 # Find the repeating and missing number
  
+# def f(arr):
+#     n=len(arr)
+
+#     hash = [0] * (n + 1) 
+
+#     for i in range(n):
+#         hash[arr[i]]+=1
+
+#     repeating,missing=-1,-1
+#     for i in range(1,n+1):
+#         if hash[i]==2:
+#             repeating=i
+#         elif hash[i]==0:
+#             missing=i    
+#         if repeating !=-1 and missing !=-1:
+#             break 
+#     return[repeating,missing]
+
+# arr=[3, 1, 2, 5, 4, 6, 7, 5]    
+# print(f(arr))
+
+
+#Maximum Product Subarray
+
 def f(arr):
     n=len(arr)
-
-    hash = [0] * (n + 1) 
-
-    for i in range(n):
-        hash[arr[i]]+=1
-
-    repeating,missing=-1,-1
-    for i in range(1,n+1):
-        if hash[i]==2:
-            repeating=i
-        elif hash[i]==0:
-            missing=i    
-        if repeating !=-1 and missing !=-1:
-            break 
-    return[repeating,missing]
-
-arr=[3, 1, 2, 5, 4, 6, 7, 5]    
-print(f(arr))
+    ans=float('-inf')
+    pre,suff=1,1
+    
