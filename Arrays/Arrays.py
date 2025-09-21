@@ -816,5 +816,5 @@ def f(arr):
     return ans    
 
     
-arr=[2,3,-2,4]
+arr=[-2,0,-1]
 print(f(arr))
