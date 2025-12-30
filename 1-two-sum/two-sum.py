@@ -1,12 +1,12 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        
-        map = {}
+        seen = {}
 
-        for i, num in enumerate(nums):
-            complement = target - num
-            if complement in map:
-                return[map[complement],i]
-            map[num]= i    
+        for i , num in enumerate(nums):
+            need = target - num
 
+            if need in seen:
+                return [seen[need],i]
 
+            seen[num] = i 
+       
