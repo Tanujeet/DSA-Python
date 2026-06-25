@@ -1,17 +1,22 @@
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
-        MaxSum = -10**4-1
-        curr = 0
+        n = len(nums)
+        maxSum = -10**4-1
+        curr  = 0 
 
-        left = 0
+        left = 0 
 
-        for right in range(len(nums)):
-            curr += nums[right]
 
-            MaxSum = max(MaxSum,curr)
+        for right in range(n):
+            curr+= nums[right]
 
-            while curr < 0:
+            maxSum = max(maxSum,curr)
+
+
+            while curr < 0 :
                 curr -= nums[left]
-                left +=1
+                left += 1
+        
 
-        return MaxSum        
+
+        return maxSum
